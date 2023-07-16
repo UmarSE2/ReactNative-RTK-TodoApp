@@ -3,11 +3,13 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = [
     { id: 1, text: 'Learn React Native' },
     { id: 2, text: 'Build a todo app' },
+    { id: 3, text: 'Teach a todo app' },
 ];
 
 const todosSlice = createSlice({
     name: 'todos',
     initialState,
+    // initialState: initialState,
     reducers: {
         addTodo: (state, action) => {
             const newTodo = {
